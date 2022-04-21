@@ -1,0 +1,34 @@
+{
+  "name": "lorenzo/cakephp-email-queue",
+  "description": "Queue, preview and and send emails stored in the database",
+  "type": "cakephp-plugin",
+  "keywords": ["cakephp", "email", "queue", "cron", "preview"],
+  "homepage": "https://github.com/lorenzo/cakephp-email-queue",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "José Lorenzo Rodríguez",
+      "role": "Author"
+    }
+  ],
+  "require": {
+    "cakephp/cakephp": "~4.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^8.5",
+    "cakephp/cakephp-codesniffer": "^4.0",
+    "php-coveralls/php-coveralls": "^2.1"
+  },
+  "autoload": {
+      "psr-4": {
+          "EmailQueue\\": "src"
+      }
+  },
+  "autoload-dev": {
+      "psr-4": {
+          "EmailQueue\\Test\\": "tests",
+          "Cake\\Test\\": "./vendor/cakephp/cakephp/tests",
+          "TestApp\\": "tests/test_app/src/"
+      }
+  }
+}
